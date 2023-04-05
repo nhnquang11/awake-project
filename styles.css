@@ -33,6 +33,14 @@ body {
   color: #4ba3c9;
 }
 
+#hamburger:hover {
+  color: #4ba3c9 !important;
+}
+
+#menu {
+  display: none;
+}
+
 #brain-img {
   width: 600px;
 }
@@ -330,6 +338,10 @@ iframe {
 
   #navbar-middle {
     display: none !important;
+  }
+
+  #menu {
+    display: block;
   }
 
   #news-and-press-section {
