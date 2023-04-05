@@ -316,10 +316,11 @@ iframe {
     margin-right: 0;
     margin-bottom: 10px;
   }
+
   #vid-container {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 60px 20px;
   }
 
   iframe {
