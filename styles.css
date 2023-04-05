@@ -39,6 +39,12 @@ body {
 
 #menu {
   display: none;
+  background-color: white;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: transparent !important;
 }
 
 #brain-img {
@@ -52,6 +58,7 @@ body {
 #header-big {
   font-size: 4rem;
   margin-bottom: 40px;
+  z-index: -1;
 }
 
 #header-small {
