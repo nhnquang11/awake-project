@@ -64,8 +64,8 @@
           id="navbar"
           class="d-flex align-items-center justify-content-between"
         >
-          <a class="navbar-brand" href="#">Awake</a>
-          <div id="navbar-middle" class="d-flex">
+          <a class="navbar-brand zero-opacity fade-left" href="#">Awake</a>
+          <div id="navbar-middle" class="d-flex zero-opacity fade-top">
             <a href="#">Products</a>
             <a href="#">Solutions</a>
             <a href="#">Customers</a>
@@ -74,7 +74,7 @@
             <a href="#">Company</a>
             <a href="#">Conference</a>
           </div>
-          <div id="navbar-right" class="d-flex">
+          <div id="navbar-right" class="d-flex zero-opacity fade-right">
             <a href="#">Talk to sales</a>
             <a href="#">Sign up</a>
           </div>
@@ -85,18 +85,25 @@
           class="d-flex justify-content-between align-items-center"
         >
           <div id="header-text-container" class="d-flex flex-column">
-            <p id="header-big">Making the <br />unconscious <br />conscious.</p>
-            <p id="header-small">
+            <p id="header-big" class="zero-opacity fade-bottom">
+              Making the <br />unconscious <br />conscious.
+            </p>
+            <p id="header-small" class="zero-opacity fade-bottom">
               Leading cognitive psychology company and that delves into the
               deepest core of your mind and unlocks your brain’s true
               potentials.
             </p>
             <div id="header-buttons">
-              <button type="button" class="btn text-mono">Get Started</button>
+              <button
+                type="button"
+                class="btn text-mono zero-opacity fade-bottom"
+              >
+                Get Started
+              </button>
               <button
                 id="talk-to-sales-btn"
                 type="button"
-                class="btn text-mono"
+                class="btn text-mono zero-opacity fade-bottom"
               >
                 Talk to Sales
               </button>
@@ -105,8 +112,9 @@
           <div>
             <img
               id="brain-img"
+              class="zero-opacity fade-right"
               src="./assets/images/gold-mobile-hero.png"
-              alt=""
+              alt="Scanning Brain Image"
             />
           </div>
         </div>
@@ -117,7 +125,7 @@
         id="carl-jung-quote-section"
         class="container-fluid d-flex justify-content-center align-items-center"
       >
-        <p id="carl-jung-quote" class="text-mono">
+        <p id="carl-jung-quote" class="text-mono zero-opacity fade-bottom">
           “Your visions will become clear only when you can look into your own
           heart.<br />
           Who looks outside, dreams; who looks inside, awakes.”<br />
@@ -132,7 +140,7 @@
         id="vid-container"
         class="d-flex align-items-center justify-content-center"
       >
-        <div id="vid-description">
+        <div id="vid-description" class="zero-opacity fade-left">
           <h3>Collaborating with Neuralink</h3>
           <p>
             With the help of implantable brain-computer interfaces, it has never
@@ -141,6 +149,7 @@
           </p>
         </div>
         <iframe
+          class="zero-opacity fade-right"
           src="https://www.youtube.com/embed/8vAMt56p_j8"
           title="Neuralink 2022"
           frameborder="0"
@@ -152,8 +161,10 @@
       <!-- News and press and partnership  -->
       <div class="container-fluid" style="background-color: #fbf9f8">
         <div id="news-and-press-section" class="container">
-          <h2 class="section-title text-mono">NEWS & PRESS</h2>
-          <div class="d-flex">
+          <h2 class="section-title text-mono zero-opacity fade-left">
+            NEWS & PRESS
+          </h2>
+          <div class="d-flex zero-opacity fade-bottom">
             <a href="" class="card">
               <p class="card-category text-mono">PUBLICATION</p>
               <p class="card-title">Lorem, ipsum dolor</p>
@@ -199,13 +210,13 @@
 
           <div
             id="partnership-section"
-            class="d-flex flex-column justify-content-center align-items-center"
+            class="d-flex flex-column justify-content-center align-items-center zero-opacity fade-top"
           >
             <p>
               We’ve partnered with academics and research facilities to further
               our mission.
             </p>
-            <div class="d-flex">
+            <div class="d-flex zero-opacity fade-top">
               <img src="assets/images/UCSF.svg" alt="" />
               <img src="assets/images/mount-sinai.svg" alt="" />
               <img src="assets/images/baylor.svg" alt="" />
