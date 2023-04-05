@@ -71,6 +71,9 @@ body {
   border: 1px solid #4ba3c9;
 }
 
+#header-buttons button {
+  margin-bottom: 10px;
+}
 .text-mono {
   font-family: "IBM Plex Mono", monospace;
 }
@@ -110,7 +113,8 @@ body {
 
 #news-and-press-section .card {
   width: 25%;
-  margin-right: 10px;
+  margin-right: 15px;
+  margin-bottom: 20px;
   text-decoration: none;
   min-height: 360px;
 }
@@ -215,6 +219,10 @@ iframe {
   font-weight: 300;
 }
 
+#partnership-section img {
+  margin-bottom: 15px;
+}
+
 /* Animation */
 .zero-opacity {
   opacity: 0;
@@ -277,5 +285,109 @@ iframe {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #header {
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px !important;
+  }
+
+  #vid-description {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  #vid-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  iframe {
+    width: 80%;
+    height: calc(80vw / 1280 * 720);
+  }
+
+  #header-big {
+    font-size: 3.5rem;
+  }
+  #brain-img {
+    margin: 50px auto;
+    width: 400px;
+  }
+
+  #carl-jung-quote-section {
+    padding: 20px !important;
+  }
+
+  #intro-section {
+    height: auto;
+  }
+
+  #navbar-middle {
+    display: none !important;
+  }
+
+  #news-and-press-section {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #news-and-press-section > div {
+    flex-wrap: wrap;
+  }
+  #news-and-press-section .card {
+    width: 46% !important;
+    min-height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #news-and-press-section > div {
+    flex-direction: column;
+  }
+
+  #news-and-press-section .card {
+    width: 100% !important;
+    min-height: 300px !important;
+    margin-right: 0;
+  }
+
+  #partnership-section {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #vid-description h3 {
+    font-size: 2rem;
+  }
+
+  #vid-description p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #brain-img {
+    margin: 50px auto 20px;
+    width: 270px;
+  }
+
+  #header-big {
+    font-size: 2.5rem;
+  }
+
+  #header {
+    margin-top: 15px;
+  }
+
+  #carl-jung-quote {
+    font-size: 1rem;
   }
 }
