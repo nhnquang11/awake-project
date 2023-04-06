@@ -87,6 +87,10 @@ function signUpOnClick(event) {
             return;
         }
         const phoneNumber = document.getElementById("phone-number").value;
+        if (username === "") {
+            alert("Please enter your username!");
+            return;
+        }
         const password = document.getElementById("password").value;
         if (password === "") {
             alert("Please enter your password!");
