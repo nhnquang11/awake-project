@@ -31,6 +31,7 @@ function logInOnClick(event) {
                 if (u.password === password) {
                     alert("Login successfully!")
                     location.assign("./index.html");
+                    sessionStorage.setItem("currentUser", JSON.stringify(u));
                 } else {
                     alert("Wrong password! Try again!");
                 }
