@@ -16,8 +16,29 @@ if (localStorage.getItem("users") === null) {
 function logInOnClick(event) {
     const username = document.getElementById("emailInput").value;
     const password = document.getElementById("passwordInput").value;
-    if (password == "1234567") {
-        alert("Successfully Login!");
+    if (username === "") {
+        alert("Please enter username!");
+        return;
+    } 
+    if (password === "") {
+        alert("Please enter password!");
+        return;
+    }
+    if (!checkUser(username)) {
+        const users = JSON.parse(localStorage.getItem("users"));
+        for (u of users) {
+            if (u.username === username) {
+                if (u.password === password) {
+                    alert("Login successfully!")
+                    location.assign("./index.html");
+                } else {
+                    alert("Wrong password! Try again!");
+                }
+                return;
+            }
+        }
+    } else {
+        alert("Username not found!")
     }
 }
 
