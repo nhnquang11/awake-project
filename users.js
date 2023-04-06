@@ -8,10 +8,8 @@ function User(firstName, lastName, email, phone, username, password) {
 }
 
 if (localStorage.getItem("users") === null) {
-    const users = [new User("ADHJKJF", "Nguyen", "quang@gamil.com", "012345678", "nhnquang", "1234567")];
-    const currentUser  = users[0];
+    const users = [];
     localStorage.setItem("users", JSON.stringify(users));
-    sessionStorage.setItem("currentUser", JSON.stringify(currentUser));
 }
 
 // Log In 
