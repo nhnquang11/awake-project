@@ -1,282 +1,297 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awake: Making the unconscious conscious</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="./app.js" defer></script>
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/images/android-chrome-512x512.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awake: Making the unconscious conscious</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
 
-    <!-- Google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/android-chrome-512x512.png" />
 
-    <!-- Bootstrap  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/1f4040b1e1.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+  <!-- Bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-      crossorigin="anonymous"
-      defer
-    ></script>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <!-- Intro section -->
-      <div id="intro-section" class="container">
-        <div
-          id="navbar"
-          class="d-flex align-items-center justify-content-between"
-        >
-          <a class="navbar-brand zero-opacity fade-left" href="#">Awake</a>
-          <div
-            id="navbar-middle"
-            class="d-flex align-items-center zero-opacity fade-top"
-          >
-            <a href="#">Products</a>
-            <a href="#">Solutions</a>
-            <a href="#">Customers</a>
-            <a href="#">Pricing</a>
-            <a href="#">Resources</a>
-            <a href="#">Company</a>
-            <a href="#">Conference</a>
-          </div>
-          <div
-            id="navbar-right"
-            class="d-flex align-items-center zero-opacity fade-right"
-          >
-            <a href="#">Talk to sales</a>
-            <a href="#">Sign up</a>
-            <div class="dropdown">
-              <button
-                id="menu"
-                class="btn btn-secondary"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i
-                  id="hamburger"
-                  class="fas fa-bars"
-                  style="color: #000000"
-                ></i>
-              </button>
-              <ul
-                class="dropdown-menu"
-                style="z-index: 1"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <li><a class="dropdown-item" href="#">Products</a></li>
-                <li><a class="dropdown-item" href="#">Solutions</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Customers</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Pricing</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Resources</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Company</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Conference</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1f4040b1e1.js" crossorigin="anonymous" defer></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"
+    defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"
+    defer></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Intro section -->
+    <div id="intro-section" class="container">
+      <div id="navbar" class="d-flex align-items-center justify-content-between">
+        <a class="navbar-brand zero-opacity fade-left" href="#">Awake</a>
+        <div id="navbar-middle" class="d-flex align-items-center zero-opacity fade-top">
+          <a href="#">Products</a>
+          <a href="#">Solutions</a>
+          <a href="#">Customers</a>
+          <a href="#">Pricing</a>
+          <a href="#">Resources</a>
+          <a href="#">Company</a>
+          <a href="#">Conference</a>
         </div>
-
-        <div
-          id="header"
-          class="d-flex justify-content-between align-items-center"
-        >
-          <div id="header-text-container" class="d-flex flex-column">
-            <p id="header-big" class="zero-opacity fade-bottom">
-              Making the <br />unconscious <br />conscious.
-            </p>
-            <p id="header-small" class="zero-opacity fade-bottom">
-              Leading cognitive psychology company that delves into the deepest
-              core of your mind and unlocks your brain’s true potentials.
-            </p>
-            <div id="header-buttons">
-              <button
-                type="button"
-                class="btn text-mono zero-opacity fade-bottom"
-              >
-                Get Started
-              </button>
-              <button
-                id="talk-to-sales-btn"
-                type="button"
-                class="btn text-mono zero-opacity fade-bottom"
-              >
-                Talk to Sales
-              </button>
-            </div>
-          </div>
-          <div>
-            <img
-              id="brain-img"
-              class="zero-opacity fade-right"
-              src="./assets/images/gold-mobile-hero.png"
-              alt="Scanning Brain Image"
-            />
+        <div id="navbar-right" class="d-flex align-items-center zero-opacity fade-right">
+          <a href="#">Talk to sales</a>
+          <a href="#">Sign up</a>
+          <div class="dropdown">
+            <button id="menu" class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i id="hamburger" class="fas fa-bars" style="color: #000000"></i>
+            </button>
+            <ul class="dropdown-menu" style="z-index: 1" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Products</a></li>
+              <li><a class="dropdown-item" href="#">Solutions</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Customers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Resources</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Company</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Conference</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- Carl Jung's quote -->
-      <div
-        id="carl-jung-quote-section"
-        class="container-fluid d-flex justify-content-center align-items-center"
-      >
-        <p id="carl-jung-quote" class="text-mono zero-opacity fade-bottom">
-          “Your visions will become clear only when you can look into your own
-          heart.<br />
-          Who looks outside, dreams; who looks inside, awakes.”<br />
-          <span class="text-grey">- Carl Jung</span>
+      <div id="header" class="d-flex justify-content-between align-items-center">
+        <div id="header-text-container" class="d-flex flex-column">
+          <p id="header-big" class="zero-opacity fade-bottom">
+            Making the <br />unconscious <br />conscious.
+          </p>
+          <p id="header-small" class="zero-opacity fade-bottom">
+            Leading cognitive psychology company that delves into the deepest
+            core of your mind and unlocks your brain’s true potentials.
+          </p>
+          <div id="header-buttons">
+            <button type="button" class="btn text-mono zero-opacity fade-bottom">
+              Get Started
+            </button>
+            <button id="talk-to-sales-btn" type="button" class="btn text-mono zero-opacity fade-bottom">
+              Talk to Sales
+            </button>
+          </div>
+        </div>
+        <div>
+          <img id="brain-img" class="zero-opacity fade-right" src="./assets/images/gold-mobile-hero.png"
+            alt="Scanning Brain Image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Carl Jung's quote -->
+    <div id="carl-jung-quote-section" class="container-fluid d-flex justify-content-center align-items-center">
+      <p id="carl-jung-quote" class="text-mono zero-opacity fade-bottom">
+        “Your visions will become clear only when you can look into your own
+        heart.<br />
+        Who looks outside, dreams; who looks inside, awakes.”<br />
+        <span class="text-grey">- Carl Jung</span>
+      </p>
+    </div>
+
+    <!-- TODO: Products -->
+
+    <div class="content-1">
+      <h1 class="header-produst">Explore DJI Products in Different Fields</h1>
+      <div class="banner">
+        <div>
+          <img class="products-1" src="https://www1.djicdn.com/cms/uploads/80f4e24d0a2c9e706a458f9e31df2ad1@1x.webp"
+            alt="video products">
+          <div class="text-box theme-light">
+            <h2 class="headline">Video Production</h2>
+            <p class="desc">Professional Aerial and Ground Filmmaking Tools</p>
+            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i> </a>
+          </div>
+        </div>
+        <div>
+          <img class="products-1" src="https://www1.djicdn.com/cms/uploads/a4911653e6158fc56f7fdf46c530d815@1x.webp"
+            alt="Enterrise">
+          <div class="text-box theme-light">
+            <h2 class="headline">Enterprise</h2>
+            <p class="desc">Drone Solutions for a New Generation of Work </p>
+            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i> </a>
+          </div>
+        </div>
+        <div>
+          <img class="products-1" src="https://www1.djicdn.com/cms/uploads/ad8fc358ecb76bc31dbb7c142aca3ce4@1x.webp"
+            alt="Agriculture ">
+          <div class="text-box theme-light">
+            <h2 class="headline">Agriculture</h2>
+            <p class="desc">Efficient and Intelligent <br> Agricultural Solution </p>
+            <a href="#">Learn More <i class="fa-solid fa-angle-right"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-2">
+      <div class="single-body-item-text">
+        <h3 class="body-item-small-heading-v2">Time Tracking</h3>
+        <p class="single-body-items-paragraph">Insightful is a time tracking software that keeps all your critical
+          operations in check, on time and on
+          budget. So you can stay focused on growing your business. </p>
+        <div>
+          <div class="wp-features-items-holder-v2">
+            <img class="check-mark-small-image"
+              src="https://assets-global.website-files.com/620e4b3d823b714310fa6d5d/620e4b3d823b711bc5fa7779_Group%201013.svg"
+              alt="time tracking projects">
+            <div class="wp-features-text-holder-v2">
+              <h4 class="wp-features-heading-v2">Project Overview</h4>
+              <p class="wp-features-paragraph-v2">Get the whole team going in the same direction. Add projects
+                and tasks, assign employees and
+                ensure efficient, focused work is being done.</p>
+            </div>
+          </div>
+          <div class="wp-features-items-holder-v2">
+            <img class="check-mark-small-image"
+              src="https://assets-global.website-files.com/620e4b3d823b714310fa6d5d/620e4b3d823b711bc5fa7779_Group%201013.svg"
+              alt="time tracking projects">
+            <div class="wp-features-text-holder-v2">
+              <h4 class="wp-features-heading-v2">Definitive Proof of Work</h4>
+              <p class="wp-features-paragraph-v2">Automatically captured screenshots and computer activities
+                mean you never foot the bill for
+                time
+                spent on other tasks, inflated timesheets or slacking.</p>
+            </div>
+          </div>
+          <div class="wp-features-items-holder-v2">
+            <img class="check-mark-small-image"
+              src="https://assets-global.website-files.com/620e4b3d823b714310fa6d5d/620e4b3d823b711bc5fa7779_Group%201013.svg"
+              alt="time tracking projects">
+            <div class="wp-features-text-holder-v2">
+              <h4 class="wp-features-heading-v2">Project Budgeting</h4>
+              <p class="wp-features-paragraph-v2">Avoid debt and boost revenue with precise,
+                down-to-the-decimal project budgeting. With our
+                advanced data, budget forecasting becomes less guesswork and more yes-work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="learn-more-start-trial ">
+          <a class="learn-more-new-body-button " href="#">Learn More</a>
+          <a class="start-trial-new-body-button " href="#">Start Tracking</a>
+        </div>
+      </div>
+      <img class="wp-features-single-item-img"
+        src="https://static.vecteezy.com/system/resources/previews/010/925/565/non_2x/work-performance-on-schedule-staff-discipline-time-and-attendance-tracking-system-office-time-tracking-illustration-vector.jpg"
+        alt="">
+    </div>
+    <!-- Video -->
+    <div id="vid-container" class="d-flex align-items-center justify-content-center">
+      <div id="vid-description" class="zero-opacity fade-left">
+        <h3>Collaborating with Neuralink</h3>
+        <p>
+          With the assistance of implantable brain-computer interfaces, it has
+          never been so easy to get in-depth data-centric feedback about your
+          brain activity.
         </p>
       </div>
-
-      <!-- TODO: Products -->
-
-      <!-- Video -->
-      <div
-        id="vid-container"
-        class="d-flex align-items-center justify-content-center"
-      >
-        <div id="vid-description" class="zero-opacity fade-left">
-          <h3>Collaborating with Neuralink</h3>
-          <p>
-            With the assistance of implantable brain-computer interfaces, it has
-            never been so easy to get in-depth data-centric feedback about your
-            brain activity.
-          </p>
-        </div>
-        <iframe
-          class="zero-opacity fade-right"
-          src="https://www.youtube.com/embed/8vAMt56p_j8"
-          title="Neuralink 2022"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <!-- News and press and partnership  -->
-      <div class="container-fluid" style="background-color: #fbf9f8">
-        <div id="news-and-press-section" class="container">
-          <h2 class="section-title text-mono zero-opacity fade-left">
-            NEWS & PRESS
-          </h2>
-          <div class="d-flex zero-opacity fade-bottom">
-            <a href="" class="card">
-              <p class="card-category text-mono">PUBLICATION</p>
-              <p class="card-title">Lorem, ipsum dolor</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ducimus aliquam natus unde rem voluptas architecto earum quo,
-                nobis, maxime expedita, cupiditate doloribus assumenda dicta
-                harum saepe est itaque nisi quidem!
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-            <a href="" class="card">
-              <p class="card-category text-mono">PUBLICATION</p>
-              <p class="card-title">Lorem</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit corrupti alias, ex dicta mollitia perferendis ut
-                itaque? Voluptatibus, molestias veniam?
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-            <a href="" class="card">
-              <p class="card-category text-mono">PRESS RELEASE</p>
-              <p class="card-title">Lorem ipsum dolor sit amet</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                iusto perspiciatis earum nostrum, nihil assumenda?
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-            <a href="" class="card">
-              <p class="card-category text-mono">PRESS RELEASE</p>
-              <p class="card-title">Lorem ipsum dolor sit</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Possimus id consequatur reiciendis labore laudantium assumenda
-                illo vel tempore dolor, in laboriosam exercitationem sint qui
-                corporis placeat error explicabo officiis fugiat?
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-          </div>
-
-          <div
-            id="partnership-section"
-            class="d-flex flex-column justify-content-center align-items-center zero-opacity fade-top"
-          >
-            <p>
-              We’ve partnered with academics and research facilities to further
-              our mission.
-            </p>
-            <div
-              class="d-flex flex-wrap justify-content-center align-items-center"
-            >
-              <img src="assets/images/UCSF.svg" alt="" />
-              <img src="assets/images/mount-sinai.svg" alt="" />
-              <img src="assets/images/baylor.svg" alt="" />
-              <img src="assets/images/brown.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TODO: Help Center -->
-
-      <!-- TODO: Subscribe news article -->
+      <iframe class="zero-opacity fade-right" src="https://www.youtube.com/embed/8vAMt56p_j8" title="Neuralink 2022"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
     </div>
-    <!-- TODO: Footer -->
-    <footer></footer>
-  </body>
+
+    <!-- News and press and partnership  -->
+    <div class="container-fluid" style="background-color: #fbf9f8">
+      <div id="news-and-press-section" class="container">
+        <h2 class="section-title text-mono zero-opacity fade-left">
+          NEWS & PRESS
+        </h2>
+        <div class="d-flex zero-opacity fade-bottom">
+          <a href="" class="card">
+            <p class="card-category text-mono">PUBLICATION</p>
+            <p class="card-title">Lorem, ipsum dolor</p>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Ducimus aliquam natus unde rem voluptas architecto earum quo,
+              nobis, maxime expedita, cupiditate doloribus assumenda dicta
+              harum saepe est itaque nisi quidem!
+            </p>
+            <p class="card-read-more text-mono">READ MORE</p>
+          </a>
+          <a href="" class="card">
+            <p class="card-category text-mono">PUBLICATION</p>
+            <p class="card-title">Lorem</p>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit corrupti alias, ex dicta mollitia perferendis ut
+              itaque? Voluptatibus, molestias veniam?
+            </p>
+            <p class="card-read-more text-mono">READ MORE</p>
+          </a>
+          <a href="" class="card">
+            <p class="card-category text-mono">PRESS RELEASE</p>
+            <p class="card-title">Lorem ipsum dolor sit amet</p>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              iusto perspiciatis earum nostrum, nihil assumenda?
+            </p>
+            <p class="card-read-more text-mono">READ MORE</p>
+          </a>
+          <a href="" class="card">
+            <p class="card-category text-mono">PRESS RELEASE</p>
+            <p class="card-title">Lorem ipsum dolor sit</p>
+            <p class="card-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Possimus id consequatur reiciendis labore laudantium assumenda
+              illo vel tempore dolor, in laboriosam exercitationem sint qui
+              corporis placeat error explicabo officiis fugiat?
+            </p>
+            <p class="card-read-more text-mono">READ MORE</p>
+          </a>
+        </div>
+
+        <div id="partnership-section"
+          class="d-flex flex-column justify-content-center align-items-center zero-opacity fade-top">
+          <p>
+            We’ve partnered with academics and research facilities to further
+            our mission.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center align-items-center">
+            <img src="assets/images/UCSF.svg" alt="" />
+            <img src="assets/images/mount-sinai.svg" alt="" />
+            <img src="assets/images/baylor.svg" alt="" />
+            <img src="assets/images/brown.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TODO: Help Center -->
+
+    <!-- TODO: Subscribe news article -->
+  </div>
+  <!-- TODO: Footer -->
+  <footer></footer>
+</body>
+
 </html>
