@@ -468,6 +468,24 @@ iframe {
   #news-and-press-section {
     padding: 60px 20px 40px;
   }
+
+  .banner {
+    margin-top: 30px;
+    flex-direction: column;
+    width: 390px;
+  }
+
+  .header-produst {
+    width: 500px;
+  }
+
+  .content-2 {
+    flex-direction: column;
+  }
+
+  .products-1 {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -523,6 +541,10 @@ iframe {
 
   #carl-jung-quote {
     font-size: 1rem;
+  }
+
+  .item-img {
+    width: 390px;
   }
 }
 
