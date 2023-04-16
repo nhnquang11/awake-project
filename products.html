@@ -73,8 +73,6 @@
   </head>
 
   <body>
-    <!-- Welcome -->
-    <div id="welcome-container" class="fadeOut display-none"></div>
     <!-- Login -->
     <div id="log-in-container" class="display-none">
       <form id="log-in-form" class="d-flex flex-column">
@@ -90,15 +88,16 @@
             for="exampleInputEmail1"
             class="text-mono"
             style="font-size: 0.9rem"
-            >Username</label
+            >Email</label
           >
           <input
-            type="text"
+            type="email"
             class="form-control text-mono"
             style="font-size: 0.9rem"
             id="emailInput"
             aria-describedby="emailHelp"
           />
+          <p id="emailMessage" class="text-mono"></p>
         </div>
         <div class="form-group">
           <label
@@ -198,156 +197,116 @@
           </div>
         </div>
 
-        <div
-          id="header"
-          class="d-flex justify-content-between align-items-center"
-        >
-          <div id="header-text-container" class="d-flex flex-column">
-            <p id="header-big" class="zero-opacity fade-bottom">
-              Making the <br />unconscious <br />conscious.
-            </p>
-            <p id="header-small" class="zero-opacity fade-bottom">
-              Leading cognitive psychology company that delves into the deepest
-              core of your mind and unlocks your brain’s true potentials.
-            </p>
-            <div id="header-buttons">
-              <button
-                type="button"
-                class="btn text-mono zero-opacity fade-bottom"
-              >
-                Get Started
-              </button>
-              <button
-                id="talk-to-sales-btn"
-                type="button"
-                class="btn text-mono zero-opacity fade-bottom"
-              >
-                Book a Demo
-              </button>
+        <div>
+          <div class="content-1" style="margin-top: 50px">
+            <h1 class="header-product zero-opacity fade-left">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </h1>
+            <div class="banner zero-opacity fade-right">
+              <div class="products-1">
+                <img
+                  src="./assets/images/sergey-brin.avif"
+                  style="width: 389px; height: 512px; object-fit: cover"
+                />
+                <div class="text-box">
+                  <h2>Lorem, ipsum.</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="products-1">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0666/9330/0444/files/Screen_Shot_2022-12-03_at_21.14_c0056255-4e10-4508-8e15-25e008c6f786.png?v=1670077265&width=1420"
+                  style="width: 389px; height: 512px; object-fit: cover"
+                />
+                <div class="text-box">
+                  <h2>Lorem.</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quod, itaque.
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="products-1">
+                <img
+                  src="./assets/images/neurons.jpeg"
+                  style="width: 389px; height: 512px; object-fit: cover"
+                />
+                <div class="text-box">
+                  <h2>Lorem.</h2>
+                  <p>
+                    Lorem, ipsum. <br />
+                    Lorem, ipsum.
+                  </p>
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div>
+          <div class="content-2" style="margin-top: 80px">
+            <div class="single-body zero-opacity fade-left">
+              <h3 class="heading-v1">Lorem, ipsum.</h3>
+              <p class="items-paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellendus maxime quos fuga dolorem eaque enim numquam voluptas
+                cumque quam quae non quia hic molestias iste repellat, inventore
+                voluptatum, sit fugit.
+              </p>
+              <div>
+                <div class="holder-v1">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <div class="holder-v2">
+                    <h4 class="heading-v2">Lorem, ipsum.</h4>
+                    <p class="paragraph-v2">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Enim, maxime asperiores reprehenderit earum sequi placeat
+                      optio. Nostrum alias cumque debitis?
+                    </p>
+                  </div>
+                </div>
+                <div class="holder-v1">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <div class="holder-v2">
+                    <h4 class="heading-v2">Lorem, ipsum dolor.</h4>
+                    <p class="paragraph-v2">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Inventore officiis labore porro reprehenderit magni id
+                      tempore aliquid libero eum explicabo.
+                    </p>
+                  </div>
+                </div>
+                <div class="holder-v1">
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <div class="holder-v2">
+                    <h4 class="heading-v2">Lorem, ipsum.</h4>
+                    <p class="paragraph-v2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Alias labore quo dolores est natus iste.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="learn-trial">
+                <a class="learn-button" href="#">Lorem, ipsum.</a>
+                <a class="start-button" href="#">Lorem, ipsum.</a>
+              </div>
+            </div>
             <img
-              id="brain-img"
-              class="zero-opacity fade-right"
-              src="./assets/images/gold-mobile-hero.png"
-              alt="Scanning Brain Image"
+              class="item-img zero-opacity fade-bottom"
+              src="./assets/images/head.png"
+              style="width: 400px; margin-top: 50px"
+              alt=""
             />
           </div>
         </div>
       </div>
-
-      <!-- Carl Jung's quote -->
-      <div
-        id="carl-jung-quote-section"
-        class="container-fluid d-flex justify-content-center align-items-center"
-      >
-        <p id="carl-jung-quote" class="text-mono zero-opacity fade-bottom">
-          “Your visions will become clear only when you can look into your own
-          heart.<br />
-          Who looks outside, dreams; who looks inside, awakes.”<br />
-          <span class="text-grey">- Carl Jung</span>
-        </p>
-      </div>
-
-      <!-- Video -->
-      <div
-        id="vid-container"
-        class="d-flex align-items-center justify-content-center"
-      >
-        <div id="vid-description" class="zero-opacity fade-left">
-          <h3>Collaborating with Neuralink</h3>
-          <p>
-            With the assistance of implantable brain-computer interfaces, it has
-            never been so easy to get in-depth data-centric feedback about your
-            brain activity.
-          </p>
-        </div>
-        <iframe
-          class="zero-opacity fade-right"
-          src="https://www.youtube.com/embed/8vAMt56p_j8"
-          title="Neuralink 2022"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <!-- News and press and partnership  -->
-      <div class="container-fluid" style="background-color: #fbf9f8">
-        <div id="news-and-press-section" class="container">
-          <h2 class="section-title text-mono zero-opacity fade-left">
-            NEWS & PRESS
-          </h2>
-          <div class="d-flex zero-opacity fade-bottom">
-            <a href="" class="card">
-              <p class="card-category text-mono">PUBLICATION</p>
-              <p class="card-title">Lorem, ipsum dolor</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ducimus aliquam natus unde rem voluptas architecto earum quo,
-                nobis, maxime expedita, cupiditate doloribus assumenda dicta
-                harum saepe est itaque nisi quidem!
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-            <a href="" class="card">
-              <p class="card-category text-mono">PUBLICATION</p>
-              <p class="card-title">Lorem</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit corrupti alias, ex dicta mollitia perferendis ut
-                itaque? Voluptatibus, molestias veniam?
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-            <a href="" class="card">
-              <p class="card-category text-mono">PRESS RELEASE</p>
-              <p class="card-title">Lorem ipsum dolor sit amet</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                iusto perspiciatis earum nostrum, nihil assumenda?
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-            <a href="" class="card">
-              <p class="card-category text-mono">PRESS RELEASE</p>
-              <p class="card-title">Lorem ipsum dolor sit</p>
-              <p class="card-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Possimus id consequatur reiciendis labore laudantium assumenda
-                illo vel tempore dolor, in laboriosam exercitationem sint qui
-                corporis placeat error explicabo officiis fugiat?
-              </p>
-              <p class="card-read-more text-mono">READ MORE</p>
-            </a>
-          </div>
-
-          <div
-            id="partnership-section"
-            class="d-flex flex-column justify-content-center align-items-center zero-opacity fade-top"
-          >
-            <p>
-              We’ve partnered with academics and research facilities to further
-              our mission.
-            </p>
-            <div
-              class="d-flex flex-wrap justify-content-center align-items-center"
-            >
-              <img src="assets/images/UCSF.svg" alt="" />
-              <img src="assets/images/mount-sinai.svg" alt="" />
-              <img src="assets/images/baylor.svg" alt="" />
-              <img src="assets/images/brown.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TODO: Help Center -->
-
-      <!-- TODO: Subscribe news article -->
     </div>
-    <!-- TODO: Footer -->
-    <footer></footer>
   </body>
 </html>
